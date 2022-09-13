@@ -1,3 +1,129 @@
+#character-screen {
+    position: absolute;
+    z-index: 999;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+#character-screen-instruction {
+    position: absolute;
+    font-size: 3vw;
+    z-index: 1001;
+    top: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.character-box {
+    height: 100%;
+    width: 25%;
+}
+
+.character-overview {
+    height: 75%;
+    width: 50%;
+    transform:skew(8deg);
+    background-color: red;
+}
+
+#character-1 {
+    background-color: #998CEB;
+    transform: skew(-8deg);
+}
+
+.character-title {
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+#brute {
+    /* Add image */
+    
+}
+/* border-left: 20vw solid red;
+  border-top: 5vw solid transparent;
+  border-bottom: 5vw solid transparent;
+  width: 0;
+  height: 10vw; */
+
+.character-image {
+    height: 50%;
+    width: 100%;
+    background-color: white;
+}
+
+/* #00abe0 */
+#character-2 {
+    background-color: #77E4D4;
+    transform: skew(-8deg);
+}
+
+/* #character-2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 25%;
+    height: 100%;
+    background: #77E4D4;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(-8deg);
+    -ms-transform: skew(-8deg);
+    transform: skew(-8deg);
+    z-index: 1000;
+  } */
+
+#character-3 {
+    background-color: #B4FE98;
+    transform: skew(-8deg);
+}
+
+#character-4 {
+    background-color: #FBF46D;
+    transform: skew(-8deg);
+}
+
+/* #FF865E, #B4FE98, #FEF9EF, #A2D2FF */
+
+/* #998CEB, #77E4D4, #B4FE98, #FBF46D */
+/* #E05D5D, #FFB344, #FFF8E5, #00A19D */
+/* #DF2E2E, #F6D167, #FFF7AE, #297F87 */
+
+#character-1:hover {
+    background-color: red;
+
+}
+
+#character-2:hover {
+    background-color: red;
+}
+
+#character-3:hover {
+    background-color: red;
+}
+
+
 /* *********************************************************************** */
 
 #andylogo {
@@ -70,10 +196,18 @@
     width: 100%;
     margin: 0%;
 
+    /* overflow-x: hidden; */
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
     /* -ms-overflow-style: none;
     overflow: overlay; */
 }
 
+.body::-webkit-scrollbar {
+    display: none;
+  }
 
 /* *********************************************************************** */
 
